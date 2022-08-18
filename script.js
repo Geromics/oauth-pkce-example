@@ -140,7 +140,7 @@ function processTokenResponse(data) {
 
 // Client ID from spotify dashboard
 const client_id = 'b189b96c428d420988bc622dbe88ce57';
-const redirect_uri = 'http://localhost:5500'; // Your redirect uri
+const redirect_uri = 'https://geromics.github.io/oauth-pkce-example/'; // Your redirect uri
 
 
   // Restore tokens from localStorage
