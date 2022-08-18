@@ -8,6 +8,12 @@ function generateRandomString(length) {
     for (let i = 0; i < length; i++) {
       text += possible.charAt(Math.floor(Math.random() * possible.length));
     }
+
+    const codeVerifier = document.getElementById('code-verifier');
+    codeVerifier.innerText = text;
+
+    // await new Promise(r => setTimeout(r, 2000));
+
     return text;
   }
 
@@ -15,6 +21,10 @@ function generateRandomString(length) {
 
 // Hash the verifier.
 async function generateCodeChallenge(codeVerifier) {
+
+    
+
+
     const digest = await crypto.subtle.digest(
       'SHA-256',
       new TextEncoder().encode(codeVerifier),
@@ -165,8 +175,6 @@ if (code) {
   // we are not logged in so show the login button
   show('login');
 }
-
-document.getElementById('recommend').style.display = 'none';
 
 document.getElementById('login-button')
         .addEventListener('click', () => {redirectToSpotifyAuthorizeEndpoint()}, false);
