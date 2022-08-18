@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sheet Music Getter</title>
+</head>
+<body>
+    <header>
+        <div id="loggedin">
+            <button id="logout-button" class="btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </button>
+            
+            <button class="btn" id="getCurrent">Get current song</button>
+            
+            
+        </div>
+
+    </header>
+
+    <div id="login">
+        <h1>
+          log in with Spotify to find your current song! <i class="fa-solid fa-face-grin" id="emoji"></i>
+        </h1>
+        <button id="login-button" class="btn">
+            <i class="fa-brands fa-spotify" id="spotify"></i>
+        </button>
+    </div>
+
+    <div id="content">
+    </div>
+
+    <button class="btn" id="recommend">Generate Recommendations</button>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
