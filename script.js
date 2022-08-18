@@ -165,6 +165,8 @@ const code = args.get('code');
 // is redirected back to the page after they have accepted the scopes.
 // If the user is redirected back to the page, then the code will be in the query params.
 // If the user is initially loading the page, then the code will be null.
+
+
 if (code) {
   exchangeToken(code);
 } else if (access_token) {
